@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_margin="16dp"
+        android:paddingBottom="32dp">
+
+        <!-- Judul Form -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Gaji Karyawan"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Nama Karyawan -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Karyawan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:paddingBottom="4dp"/>
+
+        <!-- Departemen -->
+        <TextView
+            android:id="@+id/textViewDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Departemen"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:paddingBottom="8dp"/>
+
+        <!-- Bulan -->
+        <TextView
+            android:id="@+id/textViewBulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bulan"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:paddingBottom="16dp"/>
+
+        <!-- Input Gaji Pokok -->
+        <EditText
+            android:id="@+id/editTextGajiPokok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Gaji Pokok"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Input Tunjangan -->
+        <EditText
+            android:id="@+id/editTextTunjangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tunjangan"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Input Potongan -->
+        <EditText
+            android:id="@+id/editTextPotongan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Potongan"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/textViewTotalGaji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Gaji: Rp 0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#00796B"
+            android:gravity="center"
+            android:paddingTop="16dp"/>
+
+        <!-- LinearLayout untuk menampung tombol dalam satu baris -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:weightSum="2">
+
+            <!-- Tombol Batal -->
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D32F2F"
+                android:padding="12dp"
+                android:text="Batal"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <!-- Tombol Simpan Gaji -->
+            <Button
+                android:id="@+id/buttonSimpanGaji"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:padding="12dp"
+                android:text="Simpan"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

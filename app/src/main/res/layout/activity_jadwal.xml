@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Tombol Kembali -->
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="Kembali"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_tombolkembali" />
+
+    <!-- Header Judul -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF914D"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Jadwal Proyek"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Kalender -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- Tanggal yang Dipilih -->
+    <TextView
+        android:id="@+id/txtTanggalDipilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih tanggal pada kalender"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:padding="8dp" />
+
+    <!-- Input Nama Proyek -->
+    <EditText
+        android:id="@+id/edtNamaProyek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Nama Proyek"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Input Deadline -->
+    <EditText
+        android:id="@+id/edtDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Deadline (DD/MM/YYYY)"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Tombol Tambah Proyek -->
+    <Button
+        android:id="@+id/btnTambahProyek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan Proyek"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF914D"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <!-- Tampilkan Proyek -->
+    <TextView
+        android:id="@+id/txtProyekDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada proyek pada tanggal ini."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:background="@drawable/rounded_bg"
+        android:gravity="center"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

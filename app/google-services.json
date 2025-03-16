@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "761893802699",
+    "project_id": "db-uaspenggajiankaryawan",
+    "storage_bucket": "db-uaspenggajiankaryawan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761893802699:android:c9bbb45986f20ef928014e",
+        "android_client_info": {
+          "package_name": "com.example.uaspenggajiankaryawan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7bVorqtW3IFWZ-IfSUYWxZY2v1Sxa1Ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+
+  ],
+  "configuration_version": "1"
+}

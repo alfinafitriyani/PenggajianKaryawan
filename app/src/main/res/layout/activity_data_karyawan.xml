@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Back Button with Increased Size -->
+    <ImageButton
+        android:id="@+id/buttonBackAdmin"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="Kembali ke Admin"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_tombolkembali" />
+
+    <!-- Data Karyawan Title with Background Color -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF914D"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Data Karyawan"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Employee Count and Add Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textViewJumlahKaryawan"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Total Karyawan: 0"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonTambahKaryawan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:backgroundTint="#4CAF50"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:drawablePadding="8dp"
+            android:text="Tambah"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Employee Data -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewKaryawan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

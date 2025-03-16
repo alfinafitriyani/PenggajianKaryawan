@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Kalender -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tanggal yang dipilih -->
+    <TextView
+        android:id="@+id/txtTanggalDipilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih tanggal pada kalender"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Input Nama Proyek -->
+    <EditText
+        android:id="@+id/edtNamaProyek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Nama Proyek"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Input Deadline -->
+    <EditText
+        android:id="@+id/edtDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Deadline (DD/MM/YYYY)"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Tombol Tambah Proyek -->
+    <Button
+        android:id="@+id/btnTambahProyek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan Proyek"
+
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tampilkan Proyek -->
+    <TextView
+        android:id="@+id/txtProyekDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada proyek pada tanggal ini."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:background="@drawable/rounded_bg"
+        android:gravity="center" />
+
+</LinearLayout>

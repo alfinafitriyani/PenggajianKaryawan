@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Tombol Kembali -->
+    <ImageButton
+        android:id="@+id/buttonBackProfileKaryawan"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="Kembali"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_tombolkembali"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF914D"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Profil Karyawan"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Foto Profil -->
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+
+        android:clipToOutline="true"
+        android:elevation="2dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_profil" />
+
+    <!-- CardView untuk Detail Karyawan -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Nama Karyawan -->
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Karyawan"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#444444"
+                android:paddingBottom="8dp"/>
+
+            <!-- Departemen -->
+            <TextView
+                android:id="@+id/textViewDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Departemen"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:paddingBottom="8dp"/>
+
+            <!-- Telepon -->
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telepon: 08123456789"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:paddingBottom="8dp"/>
+
+            <!-- Alamat -->
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat: Jalan Contoh No. 123, Kota"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:paddingBottom="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

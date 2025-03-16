@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Tombol Kembali -->
+    <ImageButton
+        android:id="@+id/buttonBackDetailKaryawan"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="Kembali"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_tombolkembali"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF914D"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Detail Pengumuman"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagePengumumanDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/placeholder" />
+
+    <!-- Judul Pengumuman -->
+    <TextView
+        android:id="@+id/textJudulDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="Judul Pengumuman"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Tanggal Pengumuman -->
+    <TextView
+        android:id="@+id/textTanggalDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:textSize="16sp"
+        android:textColor="#7F7F7F"
+        android:paddingBottom="8dp" />
+
+    <!-- Deskripsi Pengumuman -->
+    <TextView
+        android:id="@+id/textDeskripsiDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Pengumuman"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="16dp" />
+
+    <!-- Gambar Pengumuman -->
+</LinearLayout>
